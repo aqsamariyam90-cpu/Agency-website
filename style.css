@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #22223b;
+    background: #f8f9ff;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #171738;
+    color: white;
+}
+.navbar h2 {
+    font-size: 24px;
+}
+.navbar span {
+    color: #8b5cf6;
+}
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+.nav-links a:hover {
+    color: #8b5cf6;
+}
+.hero {
+    min-height: 500px;
+    padding: 50px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    background: #eeeaff;
+}
+.hero-text {
+    flex: 1 1 400px;
+}
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+    color: #171738;
+}
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    background: #8b5cf6;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background: #6d3fd1;
+}
+.hero-image {
+    flex: 350px;
+}
+.hero-image img {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+}
+.section {
+    padding: 60px 8%;
+    text-align: center;
+}
+.section h2 {
+    font-size: 32px;
+    color: #171738;
+    margin-bottom: 8px;
+}
+.section-text {
+    margin-bottom: 30px;
+    color: #666;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card {
+    flex: 1 1 250px;
+    padding: 30px 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px #ddd;
+}
+.card h3 {
+    color: #8b5cf6;
+    margin-bottom: 10px;
+}
+.card p {
+    line-height: 1.5;
+}
+.team-section {
+    background: #eeeaff;
+}
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.member {
+    flex: 1 1 200px;
+    max-width: 280px;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+}
+.member-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #8b5cf6;
+    color: white;
+    font-size: 24px;
+}
+.member h3 {
+    margin-bottom: 5px;
+}
+footer {
+    padding: 25px 10px;
+    text-align: center;
+    background: #171738;
+    color: white;
+}
+footer h3 {
+    margin-bottom: 8px;
+}
+footer p {
+    color: #ccc;
+}
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero h1 {
+        font-size: 35px;
+    }
+}
